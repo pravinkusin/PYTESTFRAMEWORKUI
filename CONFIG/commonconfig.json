@@ -1,0 +1,46 @@
+{
+  "UIDetails":{"quickfuseapps":"http://quickfuseapps.com/"
+  },
+  "XPATHFIRSTPAGE":
+  {"create_an_app":"//a[@id='link-create']",
+    "Lets_Get_Started":"//div[@class='ui-dialog-buttonpane ui-widget-content ui-helper-clearfix']/button[@type='button' and contains(text(),'Let')]",
+    "New_Page":"//li[@class='ui-tab-left']/a[@id='add-page']",
+    "Enter_New_Page":"//div[@id='create-dialog']/div/following-sibling::form/p/input[@class='indented submitonenter']",
+    "Create_button":"//div[@id='sm2-container']/following-sibling::div[3]/div[@class='ui-dialog-buttonpane ui-widget-content ui-helper-clearfix']/button[contains(text(),'Create')]",
+    "Messaging":"//h3[@class='ui-accordion-header ui-helper-reset ui-state-default ui-corner-top ui-corner-all']/span/following-sibling::a[contains(text(),'Messaging')]",
+    "Send_an_SMS":"//ul[@class='module-group']/li[3][@class='module-item ui-widget-content ui-corner-all module-item-green ui-draggable']",
+    "workflow_page":"//div[@id='tabs-2']",
+    "Start_Sender":"//div[@id='tabs-2']//div[@class='mod-rail mod-south']/div[@class='syn-node ui-draggable syn-node-active']",
+    "Send_an_sms_reciever":"//div[@id='module-2']/div[@class='mod-rail mod-north']/div[@class='syn-receptor ui-droppable syn-receptor-north ui-draggable syn-receptor-draggable']",
+    "Send_an_email":"//ul[@class='module-group']/li[2][@class='module-item ui-widget-content ui-corner-all module-item-green ui-draggable']",
+    "Send_an_email_workflow1":"//div[@id='module-3']/div[@class='panel']",
+    "Send_an_email_workflow":"//div[@class='panel']//div[@class='module-title' and contains(text(),'Send')]",
+    "Basic":"//div[@id='accordion' and @class='ui-accordion ui-widget ui-helper-reset']/h3[1][@class='ui-accordion-header ui-helper-reset ui-state-default ui-corner-all']",
+    "Hangup_Exit":"//div[@class='ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active']/ul/li[1]/a[@title='Add']/span[@class='ui-icon ui-icon-circle-plus']",
+    "Hangup_Exit_Drag":"//div[@id='module-4']/div[@class='panel']",
+    "Hangup_Exit_Drag1":"//div[@id='module-5']/div[@class='panel']",
+    "Hangup_Exit_Drag2":"//div[@id='module-6']/div[@class='panel']",
+    "Send_sms_module2_left":"//div[@id='module-2']//div[@class='panel-bd']/div[@class='inner']/div[@class='panel-nodes-attached inner']/div[1]",
+    "Send_sms_module2_right":"//div[@id='module-2']//div[@class='panel-bd']/div[@class='inner']/div[@class='panel-nodes-attached inner']/div[2]",
+    "Send_email_module2_left":"//div[@id='module-3']//div[@class='panel-bd']/div[@class='inner']/div[@class='panel-nodes-attached inner']/div[1]",
+    "Send_email_module2_right":"//div[@id='module-3']//div[@class='panel-bd']/div[@class='inner']/div[@class='panel-nodes-attached inner']/div[2]",
+    "send_email_reciever":"//div[@id='module-3']//div[@class='syn-receptor ui-droppable syn-receptor-north ui-draggable syn-receptor-draggable']",
+    "Exit_app_module4":"//div[@id='module-4']/div[@class='mod-rail mod-north']/div[@class='syn-receptor ui-droppable syn-receptor-north ui-draggable syn-receptor-draggable']",
+    "Exit_app_module5":"//div[@id='module-5']/div[@class='mod-rail mod-north']/div[@class='syn-receptor ui-droppable syn-receptor-north ui-draggable syn-receptor-draggable']",
+    "Exit_app_module6":"//div[@id='module-6']/div[@class='mod-rail mod-north']/div[@class='syn-receptor ui-droppable syn-receptor-north ui-draggable syn-receptor-draggable']",
+    "send_an_sms_text_input":"//div[@id='module-2']/div[1]/div[3]/div/div[2]/div/table/tbody/tr/td[1]/div/textarea",
+    "send_an_sms_phone_input_message":"//div[@id='module-2']//textarea[@name='phone_constant']",
+    "send_an_email_smtp_url":"//div[@id='module-3']//input[@name='smtp_url']",
+    "send_an_email_port":"//div[@id='module-3']//input[@name='port']",
+    "send_an_email_ssl":"//div[@id='module-3']//input[@name='ssl']",
+    "send_an_email_username":"//div[@id='module-3']//input[@name='username']",
+    "send_an_email_password":"//div[@id='module-3']//input[@name='password']",
+    "send_an_email_from":"//div[@id='module-3']//textarea[@name='from_constant']",
+    "send_an_email_to":"//div[@id='module-3']//textarea[@name='to_constant']",
+    "send_an_email_subject":"//div[@id='module-3']//textarea[@name='subject_constant']",
+    "send_an_email_input_message":"//div[@id='module-3']/div[1]/div[3]/div/div[3]/div/div/table/tbody/tr/td[1]/div/textarea"
+
+
+  }
+}
+

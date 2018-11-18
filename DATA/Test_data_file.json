@@ -1,0 +1,14 @@
+{
+"TestData":{
+"send_an_sms_text_input":"Hello World",
+    "send_an_sms_phone_input_message":"7412345600",
+    "send_an_email_smtp_url":"smptp.gmail.com",
+    "send_an_email_port":"465",
+    "send_an_email_username":"abc@gmail.com",
+    "send_an_email_password":"welcome32",
+    "send_an_email_from":"abc@gmail.com",
+    "send_an_email_to":"xyz@gmail.com",
+    "send_an_email_subject":"SMS NOT SENT",
+    "send_an_email_input_message":"SMS to Phone 7412345600 not sent"}
+
+}
