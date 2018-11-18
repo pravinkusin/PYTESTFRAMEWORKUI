@@ -73,11 +73,11 @@ class test_quickfuseapps(test_CommonLibraryDriverCreation,unittest.TestCase,Gene
             self.InputElement(config_json["XPATHFIRSTPAGE"]["send_an_email_subject"],data_json["TestData"]["send_an_email_subject"])
             self.InputElement(config_json["XPATHFIRSTPAGE"]["send_an_email_input_message"],data_json["TestData"]["send_an_email_input_message"])
 
-            time.sleep(100)
+            time.sleep(10) #just to check screen for final result
 
         except Exception,e:
             print "ERROR {}".format(e)
-            time.sleep(100)
+
 
 
 
