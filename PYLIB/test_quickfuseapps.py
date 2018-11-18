@@ -45,9 +45,9 @@ class test_quickfuseapps(test_CommonLibraryDriverCreation,unittest.TestCase,Gene
             time.sleep(5)
             self.drag_and_drop_Element(config_json["XPATHFIRSTPAGE"]["Send_an_email"],config_json["XPATHFIRSTPAGE"]["workflow_page"])
             time.sleep(5)
+            self.WaitUntilElementFound(config_json["XPATHFIRSTPAGE"]["Basic"])
             self.ClickElement(config_json["XPATHFIRSTPAGE"]["Basic"])
             self.ClickElement(config_json["XPATHFIRSTPAGE"]["Hangup_Exit"])
-            time.sleep(5)
             self.drag_and_drop_Element_by_offset(config_json["XPATHFIRSTPAGE"]["Send_an_email_workflow"],350,0)
             self.drag_and_drop_Element_by_offset(config_json["XPATHFIRSTPAGE"]["Hangup_Exit_Drag"],-200,+200)
             self.ClickElement(config_json["XPATHFIRSTPAGE"]["Hangup_Exit"])
@@ -77,7 +77,7 @@ class test_quickfuseapps(test_CommonLibraryDriverCreation,unittest.TestCase,Gene
 
         except Exception,e:
             print "ERROR {}".format(e)
-
+            raise Exception
 
 
 
