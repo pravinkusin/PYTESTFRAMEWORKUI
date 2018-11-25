@@ -1,0 +1,17 @@
+*** Settings ***
+Library           Selenium2Library
+Library           ../BIN/GenericUIFunction.py
+Library           ../PYLIB/DataCollection.py    WITH NAME    DC
+
+*** Test Cases ***
+TC01_To_Collect_all_Reviews
+    Initialize
+    Maximize Browser Window
+    DC.Getting Reviews In Excel    ${driver}
+    Close Browser
+
+*** Keywords ***
+Initialize
+    Open Browser    https://www.capterra.com/p/144037/Zoom-Video-Conferencing/?sort_options=Lowest%20Rating/    chrome
+    ${driver}    DC.Get Webdriver Instance
+    Set Suite Variable    ${driver}

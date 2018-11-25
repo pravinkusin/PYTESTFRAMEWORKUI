@@ -5,10 +5,24 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 import re
+import os
 from selenium.webdriver.support.ui import Select
 import time
+from selenium import webdriver
+from robot.libraries.BuiltIn import BuiltIn as BI
+
+
+basedir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 class GenericUIFunction:
+
+    def __init__(self):
+        self.builtin = BI()
+
+    def get_webdriver_instance(self):
+        self.sel = self.builtin.get_library_instance("Selenium2Library")
+        return self.sel._current_browser()
 
     def ClickElement(self,locator):
         ClickElement = self.driver.find_element_by_xpath(locator)
@@ -75,6 +89,11 @@ class GenericUIFunction:
             list.append(GetEelem)
         print list
         return list
+
+    def move_to_element(self,locator):
+        element = self.driver.find_element_by_xpath(locator)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element).perform()
 
     def click_specific_dropdown_value(self,matchingLocator,incrementLocator,UItext):
         list = []
