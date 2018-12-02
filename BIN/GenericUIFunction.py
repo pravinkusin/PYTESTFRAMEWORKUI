@@ -76,6 +76,11 @@ class GenericUIFunction:
         print list
         return list
 
+    def move_to_element(self,locator):
+        element = self.driver.find_element_by_xpath(locator)
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element).perform()
+
     def click_specific_dropdown_value(self,matchingLocator,incrementLocator,UItext):
         list = []
         len_match_count = self.get_matching_xpathcount(matchingLocator)
